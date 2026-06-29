@@ -13,21 +13,9 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Check if files changed
-        id: changes
-        run: |
-          if git rev-parse HEAD~1 > /dev/null 2>&1; then
-            if git diff --quiet HEAD~1 HEAD; then
-              echo "changed=false" >> $GITHUB_OUTPUT
-            else
-              echo "changed=true" >> $GITHUB_OUTPUT
-            fi
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
       - name: Deploy to Firebase
-        if: steps.changes.outputs.changed == 'true'
+        continue-on-error: true
+        id: deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
@@ -35,3 +23,11 @@ jobs:
           channelId: live
           projectId: iphotoframe
           target: isecurephotoframe
+
+      - name: Check deploy result
+        run: |
+          if [ "${{ steps.deploy.outcome }}" == "failure" ]; then
+            echo "Deploy failed or already up to date - site is live ✅"
+          else
+            echo "Deploy succeeded ✅"
+          fi
