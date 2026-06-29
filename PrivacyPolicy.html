@@ -4,144 +4,141 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>iSecure Photo Frame — Privacy Policy</title>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyCuF0_narWFtk_7bZ2ysE3SPW7eFrWCR-w",
-      authDomain: "iphotoframe.firebaseapp.com",
-      projectId: "iphotoframe",
-      storageBucket: "iphotoframe.firebasestorage.app",
-      messagingSenderId: "448252386238",
-      appId: "1:448252386238:web:4cc3d851441a30caf8b7ef",
-      measurementId: "G-RZXFD06Q0K"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 22px 80px;
-      color: #1c1c1e;
-      background: #ffffff;
-    }
-    @media (prefers-color-scheme: dark) {
-      body { color: #e5e5ea; background: #000000; }
-      a { color: #0a84ff; }
-      .muted { color: #98989d; }
-    }
-    h1 { font-size: 1.9rem; margin-bottom: 0.2em; }
-    h2 { font-size: 1.25rem; margin-top: 2em; }
-    a { color: #007aff; }
-    .muted { color: #6e6e73; font-size: 0.95rem; }
-    ul { padding-left: 1.2em; }
-    li { margin: 0.3em 0; }
-    code { font-size: 0.95em; }
-  </style>
+  <meta name="description" content="The iSecure Photo Frame privacy policy: no accounts, no tracking, no servers. Your photos and HomeKit data stay on your device.">
+  <link rel="icon" type="image/png" href="images/app-icon.png">
+  <link rel="apple-touch-icon" href="images/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="muted">iSecure Photo Frame &middot; Last updated: June 28, 2026</p>
-  <p>
-    iSecure Photo Frame (the &ldquo;App&rdquo;) turns your iPad into a digital photo
-    frame and a HomeKit dashboard. Your privacy matters to us. This policy explains
-    what the App accesses, how it is used, and what leaves your device &mdash; which is
-    almost nothing.
-  </p>
 
-  <h2>Summary</h2>
-  <ul>
-    <li>The App has <strong>no accounts, no sign-in, and no servers of our own</strong>.</li>
-    <li>We do <strong>not</strong> collect, sell, or share your personal data.</li>
-    <li>We do <strong>not</strong> use analytics, advertising, or any third-party tracking.</li>
-    <li>Your photos, videos, and HomeKit data stay on your device.</li>
-  </ul>
+  <!-- Nav -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/app-icon.png" alt="">
+        <span>iSecure Photo Frame</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#screens">Screenshots</a>
+        <a href="Support.html">Support</a>
+        <a href="PrivacyPolicy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Information the App Accesses</h2>
+  <main class="page">
+    <p class="page-eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="muted">iSecure Photo Frame &middot; Last updated: June 28, 2026</p>
 
-  <h3>Photos &amp; Videos</h3>
-  <p>
-    With your permission, the App reads photos and videos from the albums or library
-    you choose, in order to display them in the slideshow. This content is read on your
-    device for display only. It is never uploaded, copied off your device, or shared by
-    the App.
-  </p>
+    <p class="lead">
+      iSecure Photo Frame (the &ldquo;App&rdquo;) turns your iPad into a digital photo
+      frame and a HomeKit dashboard. Your privacy matters to us. This policy explains
+      what the App accesses, how it is used, and what leaves your device &mdash; which is
+      almost nothing.
+    </p>
 
-  <h3>HomeKit</h3>
-  <p>
-    With your permission, the App accesses your HomeKit home to show live camera feeds
-    and to control accessories such as lights, locks, switches, garage doors, and fans.
-    HomeKit communication is handled by Apple&rsquo;s HomeKit framework directly between
-    your device and your accessories. The App does not store or transmit your HomeKit
-    data to us or any third party.
-  </p>
+    <div class="card-soft">
+      <h3>Summary</h3>
+      <ul>
+        <li>The App has <strong>no accounts, no sign-in, and no servers of our own</strong>.</li>
+        <li>We do <strong>not</strong> collect, sell, or share your personal data.</li>
+        <li>We do <strong>not</strong> use analytics, advertising, or any third-party tracking.</li>
+        <li>Your photos, videos, and HomeKit data stay on your device.</li>
+      </ul>
+    </div>
 
-  <h3>Location (from photo metadata)</h3>
-  <p>
-    To show the place name where a photo was taken, the App may send the photo&rsquo;s
-    embedded GPS coordinates to Apple&rsquo;s geocoding service to convert them into a
-    readable location name. This uses Apple&rsquo;s system service and is subject to
-    <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. The
-    App does not track your real-time location and does not store location history.
-  </p>
+    <h2>Information the App Accesses</h2>
 
-  <h2>Data We Do Not Collect</h2>
-  <p>
-    The App does not collect contact information, identifiers, usage data, diagnostics,
-    or any data used to track you across apps or websites. There is no advertising SDK
-    and no analytics SDK in the App.
-  </p>
+    <h3>Photos &amp; Videos</h3>
+    <p>
+      With your permission, the App reads photos and videos from the albums or library
+      you choose, in order to display them in the slideshow. This content is read on your
+      device for display only. It is never uploaded, copied off your device, or shared by
+      the App.
+    </p>
 
-  <h2>Third-Party Services</h2>
-  <p>
-    The App relies only on Apple system frameworks (Photos, HomeKit, Core Location,
-    AVFoundation, and AirPlay). When you use AirPlay, media is sent to the AirPlay
-    receiver you select. We do not integrate any third-party data-collection services.
-  </p>
+    <h3>HomeKit</h3>
+    <p>
+      With your permission, the App accesses your HomeKit home to show live camera feeds
+      and to control accessories such as lights, locks, switches, garage doors, and fans.
+      HomeKit communication is handled by Apple&rsquo;s HomeKit framework directly between
+      your device and your accessories. The App does not store or transmit your HomeKit
+      data to us or any third party.
+    </p>
 
-  <h2>Permissions</h2>
-  <p>
-    The App requests Photo Library and HomeKit access only to provide its core features.
-    You can review or revoke these permissions at any time in the iOS Settings app under
-    Privacy &amp; Security. Denying a permission simply disables the related feature.
-  </p>
+    <h3>Location (from photo metadata)</h3>
+    <p>
+      To show the place name where a photo was taken, the App may send the photo&rsquo;s
+      embedded GPS coordinates to Apple&rsquo;s geocoding service to convert them into a
+      readable location name. This uses Apple&rsquo;s system service and is subject to
+      <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. The
+      App does not track your real-time location and does not store location history.
+    </p>
 
-  <h2>Data Security</h2>
-  <p>
-    Because the App keeps your content on your device and does not operate its own
-    servers, your data benefits from the security of your device and of Apple&rsquo;s
-    platform protections.
-  </p>
+    <h2>Data We Do Not Collect</h2>
+    <p>
+      The App does not collect contact information, identifiers, usage data, diagnostics,
+      or any data used to track you across apps or websites. There is no advertising SDK
+      and no analytics SDK in the App.
+    </p>
 
-  <h2>Children&rsquo;s Privacy</h2>
-  <p>
-    The App is not directed to children under 13 and does not knowingly collect personal
-    information from anyone.
-  </p>
+    <h2>Third-Party Services</h2>
+    <p>
+      The App relies only on Apple system frameworks (Photos, HomeKit, Core Location,
+      AVFoundation, and AirPlay). When you use AirPlay, media is sent to the AirPlay
+      receiver you select. We do not integrate any third-party data-collection services.
+    </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. Changes will be posted on this
-    page with an updated &ldquo;Last updated&rdquo; date.
-  </p>
+    <h2>Permissions</h2>
+    <p>
+      The App requests Photo Library and HomeKit access only to provide its core features.
+      You can review or revoke these permissions at any time in the iOS Settings app under
+      Privacy &amp; Security. Denying a permission simply disables the related feature.
+    </p>
 
-  <h2>Contact</h2>
-  <p>
-    If you have questions about this Privacy Policy, contact us at
-    <a href="mailto:mac.kalvin@mac.com">mac.kalvin@mac.com</a>.
-  </p>
+    <h2>Data Security</h2>
+    <p>
+      Because the App keeps your content on your device and does not operate its own
+      servers, your data benefits from the security of your device and of Apple&rsquo;s
+      platform protections.
+    </p>
+
+    <h2>Children&rsquo;s Privacy</h2>
+    <p>
+      The App is not directed to children under 13 and does not knowingly collect personal
+      information from anyone.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Changes will be posted on this
+      page with an updated &ldquo;Last updated&rdquo; date.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, contact us at
+      <a href="mailto:mac.kalvin@mac.com">mac.kalvin@mac.com</a>.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark" src="images/app-icon.png" alt=""> iSecure Photo Frame
+      </div>
+      <nav class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="Support.html">Support</a>
+        <a href="PrivacyPolicy.html">Privacy Policy</a>
+        <a href="mailto:mac.kalvin@mac.com">Contact</a>
+      </nav>
+      <p class="muted">© 2026 iSecure Photo Frame. Not affiliated with Apple Inc. HomeKit and AirPlay are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
