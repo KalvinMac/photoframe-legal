@@ -2,6 +2,10 @@
   "hosting": {
     "target": "isecurephotoframe",
     "public": ".",
-    "ignore": ["firebase.json", "**/.*"]
+    "ignore": ["firebase.json", "**/.*"],
+    "redirects": [
+      { "source": "/PrivacyPolicy.html", "destination": "/isecure/privacy.html", "type": 301 },
+      { "source": "/Support.html", "destination": "/isecure/support.html", "type": 301 }
+    ]
   }
 }
